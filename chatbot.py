@@ -4,6 +4,7 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import fitz  # PyMuPDF
 import tempfile
+from dotenv import load_dotenv
 import os
 from flask_cors import CORS
 
@@ -13,6 +14,7 @@ pdf_path = "static/Course 2_ Leadership Habits and Characteristics.pdf"  # Move 
 app = Flask(__name__)
 CORS(app)
 
+load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Reuse your original functions here: load_pdf_chunks, get_embedding, etc.

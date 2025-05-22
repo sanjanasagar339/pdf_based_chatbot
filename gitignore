@@ -1,0 +1,48 @@
+# === ENVIRONMENT FILES ===
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === PYTHON FILES ===
+__pycache__/
+*.py[cod]
+*$py.class
+
+# === FLASK SETTINGS ===
+instance/
+*.db
+*.sqlite3
+
+# === VIRTUAL ENVIRONMENTS ===
+venv/
+ENV/
+env/
+.venv/
+
+# === PACKAGING ===
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+
+# === LOG FILES ===
+*.log
+
+# === OS-SPECIFIC FILES ===
+.DS_Store
+Thumbs.db
+
+# === IDE / EDITOR FILES ===
+.vscode/
+.idea/
